@@ -3,9 +3,9 @@ function twelve_clock() {
 
     //declaring variables 
     let date = new Date();
-    let hour = time.getHours();
-    let min = time.getMinutes();
-    let sec = time.getSeconds();
+    let hour = date.getHours();
+    let min = date.getMinutes();
+    let sec = date.getSeconds();
     let count = 0
     ampm = 'am';
 

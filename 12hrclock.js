@@ -1,5 +1,3 @@
-setInterval(showtime, 1000);
-
 // function for time
 function twelve_clock() {
 
@@ -23,12 +21,20 @@ function twelve_clock() {
         else if (count % 2 ==='1') {
             ampm = 'pm';
         }
+    }
         // making the program maintainable, ensuring count doesn't get too big
-        if (count === '6') {
+    if (count === '6') {
             count = 0
-        }
+    }
+    hour = (hour < 10) ? "0" + hour : hour;
+    min = (min < 10) ? "0" + min : min;
+    sec = (sec < 10) ? "0" + sec : sec;
+         
+    let time = hour + ":" + min + ":" + sec + " " + ampm;
+     
+    document.getElementById("clock").innerText = time; 
+    let t = setTimeout(function(){ currentTime() }, 1000);
 
     }
+twelve_clock();
 
-
-}

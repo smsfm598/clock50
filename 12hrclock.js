@@ -2,7 +2,7 @@
 function twelve_clock() {
 
     //declaring variables 
-    let time = new Date();
+    let date = new Date();
     let hour = time.getHours();
     let min = time.getMinutes();
     let sec = time.getSeconds();

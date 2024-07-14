@@ -31,10 +31,8 @@ function twelve_clock() {
     sec = (sec < 10) ? "0" + sec : sec;
          
     let time = hour + ":" + min + ":" + sec + " " + ampm;
-     
-    document.getElementById("clock").innerText = time; 
-    let t = setTimeout(function(){ currentTime() }, 1000);
 
-    }
-twelve_clock();
+document.getElementById("clock").innerHTML = time; 
+}
+setInterval(twelve_clock(), 1000);
 

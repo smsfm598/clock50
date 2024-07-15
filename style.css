@@ -7,17 +7,17 @@
 .hero{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(45deg, #08001f, #30197d); /* angle, top and bottom colour*/
+    background: linear-gradient(45deg, #08001f, #252525); /* angle, top and bottom colour*/
     color: #fff;
     position: relative;
 }
 .container{
     width: 800px;
     height: 180px;
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translated(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 .clock{
     width: 100%;
@@ -27,7 +27,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    backdrop-filter: blur(40px); /*adds blurred glass effect */
+    backdrop-filter: blur(20px); /*adds blurred glass effect */
 }
 .container::before{
     content:'';

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -62,4 +65,53 @@
     display: inline-block;
     text-align: center;
     position: relative;
+}
+
+.header{
+    font-size: 75px;
+    text-align: center;
+    position: relative;
+    font-palette: light;
+    font-family: 'Poppins', 'Bungee','Montseratt', sans-serif;
+    color: #fff;
+}
+  .mini-card {
+    width: 300px;
+    min-height: 400px;
+    padding: 1.5rem;
+    border-radius: 16px;
+    background: #17141d;
+    -webkit-box-shadow: -1rem 0 3rem #000;
+    box-shadow: -1rem 0 3rem #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    margin: 0;
+    z-index: 1;
+  }
+.header-card {
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    transform: rotate(270deg);
+    -webkit-box-flex: 0;
+    -ms-flex: 0;
+    flex: 0;
+    width: 110px;
+    font-size: 32px;
+    margin-right: 1rem;
+    left:70px;
+    top:-50px;
+    text-align: center;
+    position:relative;
+    color: #fff;
+}
+.mini-card:hover {
+      transform: translate(0, -1rem);
 }

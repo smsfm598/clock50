@@ -10,7 +10,7 @@
 .hero{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(45deg, #0C090A, #252525); /* angle, top and bottom colour*/
+    background:linear-gradient(45deg, #252525, #000000) ;
     color: #fff;
     position: relative;
 }
@@ -70,11 +70,13 @@
 .header{
     font-size: 75px;
     text-align: center;
-    position: relative;
     font-palette: light;
     font-family: 'Poppins', 'Bungee','Montseratt', sans-serif;
     color: #fff;
+    background-color: #252525;
+    position: relative;
 }
+
   .mini-card {
     width: 300px;
     min-height: 400px;
@@ -105,7 +107,7 @@
     flex: 0;
     width: 110px;
     font-size: 32px;
-    margin-right: 1rem;
+
     left:70px;
     top:-50px;
     text-align: center;
@@ -114,4 +116,94 @@
 }
 .mini-card:hover {
       transform: translate(0, -1rem);
+}
+
+
+.link{
+    color: #fff;
+    text-align: center;
+    position:relative;
+    font-family: 'Poppins', 'Bungee', 'Montserrat', sans-serif;
+}
+
+img {
+    width:500px;
+    height:250px;
+    float:left;
+  }
+
+.imagebox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.classic-container{
+    width: 800px;
+    height: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.classic_clock{
+    width: 100%;
+    height: 100%;
+    font-size: 200px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(20px); /*adds blurred glass effect */
+}
+
+.background-changer1{
+    position:fixed;
+    bottom: 18px;
+    right: 18px;
+    border: 2px solid #ffffff;
+    padding: 4px 8px 4px 8px;
+    border-radius: 25px;
+}
+.background-changer1 input{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.background-changer2{
+    position:fixed;
+    bottom: 60px;
+    right: 18px;
+    border: 2px solid #ffffff;
+    padding: 4px 8px 4px 8px;
+    border-radius: 25px;
+}
+.background-changer2 input{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.clock-changer1{
+    position:fixed;
+    bottom: 102px;
+    right: 18px;
+    border: 2px solid #ffffff;
+    padding: 4px 8px 4px 8px;
+    border-radius: 25px;
+}
+.clock-changer1 input{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    opacity: 0;
 }

@@ -1,18 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta name="viewport" content="initial-scale=1, width=device-width">
 
-    <title>Custom Clock</title>
+    <title>Custom Clock: Geometric Clock</title>
 
     <link rel = 'stylesheet' href="style.css"> <!-- referencing other files (css and java)-->
 </head>
 
 <body>
   <div class="hero">
-    <div class="container">
+    <div class="container"><div class="container-square"><div class="container-circle">
       <div class="clock">
         <span id = "hour">00</span>
           <span>:</span>
@@ -20,22 +19,29 @@
           <span>:</span>
           <span id = "sec">00</span>
       </div>
-    </div>
+    </div></div></div>
   </div>
+
+<div class="background-changer1" style="color: white">
+    Bottom-Left
+    <label>
+    <input type="color"> </label>
+</div>
+  <div class="background-changer2" style="color: white">
+    Top-Right
+    <label>
+    <input type="color"> </label>
+  </div>
+  <div class="clock-changer1" style="color: white">
+    Clock
+    <label>
+    <input type="color"> </label>
+  </div>
+
+
+
+<script src="colour_changer.js"></script>
 </body>
-    <script>
-    //declaring variables
-    let hour = document.getElementById("hour");
-    let min = document.getElementById("min");
-    let sec = document.getElementById("sec");
-
-
-    setInterval(()=> {
-        let date = new Date();
-        hour.innerHTML = (date.getHours()<10?"0":"")+ date.getHours();
-        min.innerHTML = (date.getMinutes()<10?"0":"")+ date.getMinutes();
-        sec.innerHTML = (date.getSeconds()<10?"0":"")+ date.getSeconds();
-    },1000)
-    </script>
+    <script src="clock.js"></script>
 
 </html>
